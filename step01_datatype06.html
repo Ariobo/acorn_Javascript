@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자바스</h1>
+    <script>
+        /*
+            특정 시점에 일괄 실행할 javascript 를 미리 준비해 놓기 위해서는
+            funtion type data 가 필요하다
+        */
+
+        //numder type data 을 만들어서 num1 이라는 이름의변수에 대입
+        let num1=10;
+        //string type data 을 만들어서 num1 이라는 이름의변수에 대입
+        let name1="kim";
+        //object type data 을 만들어서 num1 이라는 이름의변수에 대입
+        let mem1={};
+        
+        
+        // function type data 을 만들어서 f1 이라는 이름의 변수에 대입하기
+        let f1=function(){
+            console.log("하나");
+            console.log("두울");
+            console.log("세엣");
+        };
+        
+        // f1 안에 둘오있는 값을 참조
+        let f2=f1
+
+        let length=f1();
+    </script>
+</body>
+</html>

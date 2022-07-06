@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <button onclick="plus()">+</button>
+    <button onclick="minus()">-</button>
+    <input type="text" id="num2">
+    =
+    <span id="result"></span>
+    <script>
+
+    let a=function(){
+        return document.querySelector("#num1").value;
+    };
+    let b=function(){
+        return document.querySelector("#num2").value;
+    };
+    function plus(){
+        let result= Number(a())+ Number(b());
+        document.querySelector("#result").innerText=result;
+    }
+    function minus(){
+        let result= Number(a())- Number(b());
+        document.querySelector("#result").innerText=result;
+    }
+   
+
+    </script>
+</body>
+</html>

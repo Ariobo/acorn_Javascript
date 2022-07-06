@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            함수를 호출하는 목적
+
+            1.어떠한 동작을 하기위해
+            2.어떠한 값을 받아오기 위해
+        */
+
+        console.log("javascript 가 로딩 중 입니다.");
+
+        //원숭이를 냉장고에 밀어 넣는 함수
+        let pushMonkey=function(){
+            console.log("냉장고 문을 열어요");
+            console.log("원숭이를 넣어요");
+            console.log("냉장고 문을 닫아요");
+            // undefined 로 바뀌고 (무조건)
+        }
+
+        let getFortune=function(){
+            // 어떠 복잡한 과정을 통해서 오늘의 운세를 얻어 왔다고 가정
+            let fortune = "동쪽으로 가면 귀인을 만나요";
+            return fortune;
+            // int str flow 방식으로 결과가 바뀐다 (그래서 리턴)
+        };
+
+        //원숭이를 냉장고에 넣고
+        pushMonkey(); //undefined
+        
+        //오늘의 운세를 받아와서 fortunetoday 라는 변수를 담기
+        let fortunetoday=getFortune();
+
+        console.log(fortunetoday)
+
+        console.log("javascript 가 종료 중 입니다.");
+    </script>
+</body>
+</html>
