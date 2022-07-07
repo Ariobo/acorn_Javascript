@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clicked()">눌러보셈</button>
+    <button id="myBtn">눌러보셈</button>    
+    <p id="console"></p>
+    <script>
+        const clicked=function(){
+            document.querySelector("#console").innerText="버튼을 눌러 버렸네?"
+        };
+        
+        document.querySelector("#myBtn").addEventListener("click",function(){
+            document.querySelector("#console").innerText="앗 버튼을 눌러 버렸네?"
+        });
+    </script>
+</body>
+</html>

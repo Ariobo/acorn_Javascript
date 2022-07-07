@@ -15,20 +15,20 @@
     <span id="result"></span>
     <script>
 
-    let a=function(){
+    let num1=function(){
         return document.querySelector("#num1").value;
     };
-    let b=function(){
+    let num2=function(){
         return document.querySelector("#num2").value;
     };
     function plus(){
-        let result= Number(a())+ Number(b());
+        let result= Number(num1())+ Number(num2());
         document.querySelector("#result").innerText=result;
-    }
+    };
     function minus(){
-        let result= Number(a())- Number(b());
+        let result= Number(num1())- Number(num2());
         document.querySelector("#result").innerText=result;
-    }
+    };
    
 
     </script>

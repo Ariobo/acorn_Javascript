@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 내부 css */
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="myDiv"></div>
+    <p ></p>
+    <script>
+        const mydiv1=document.querySelector("#myDiv");
+        const mydiv2=document.querySelector(".box");
+        
+
+        function divMouseDown(){
+            mydiv1.style.backgroundColor="#fff000"
+        }
+        function divMouseUp(){
+            mydiv1.style.backgroundColor="#fff"
+        }
+
+        function divmoveXY(e) {
+            mydiv2.innerText = `
+            client X/Y: ${e.clientX}, ${e.clientY}`;
+        }
+
+        mydiv2.addEventListener("mousemove",divmoveXY);
+        mydiv1.addEventListener("mousedown",divMouseDown);
+        mydiv1.addEventListener("mouseup",divMouseUp);
+    </script>
+</body>
+</html>

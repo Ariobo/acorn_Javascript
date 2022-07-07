@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 내부 css */
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box</div>
+    <!--인라인이 외부 라인보다 강력크-->
+    <div style="width: 100px; height: 100px; border: 1px solid red;">box</div>
+    <div id="myDiv">box</div>
+    <script>
+        let div1=document.querySelector("#myDiv");
+        div1.style.width="100px";
+        div1.style.height="100px";
+        div1.style.border="1px solid blue";
+        div1.style.backgroundColor="#fff000";
+        //or
+        document.querySelector("#myDiv").style.width="100px";
+        document.querySelector("#myDiv").style.height="100px";
+        document.querySelector("#myDiv").style.border="1px solid blue";
+        document.querySelector("#myDiv").style.backgroundColor="#fff000";
+
+    </script>
+
+</body>
+</html>
